@@ -1,149 +1,267 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    />
 
-    <title>MMWP</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <link rel="stylesheet" href="dist/reset.css" />
-    <link rel="stylesheet" href="dist/reveal.css" />
-    <link rel="stylesheet" href="dist/theme/black.css" />
+    <title>Mobile-First vs. Desktop-First</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 
-    <!-- Theme used for syntax highlighted code -->
-    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
-  </head>
-  <body>
-    <div class="reveal">
-      <div class="slides">
-        <section>
-          <section>Desktop First</section>
-          <section>Slide 1</section>
-          <section>Slide 2</section>
-        </section>
-        <section>
-          <section>Mobile First</section>
-          <section>
-            <h2>Was ist Mobile First?</h2>
-            <ul>
-              <li>
-                Definition: Fokus auf die Optimierung für mobile Geräte, dann
-                sukzessive Anpassungen an größere Bildschirme.
-              </li>
-              <li>
-                Entwicklung startet beim kleinsten Layout (kleinster Viewport).
-              </li>
-              <li>Im Zentrum: optimale Lösung für mobile Endgeräte.</li>
-            </ul>
-            <img src="Pictures/02-04-4-mobile-first.avif" />
-          </section>
-          <section>
-            <h2>Warum Mobile First?</h2>
-            <ul>
-              <li>
-                Mehr als 80% der Internetnutzer in Deutschland surfen mobil
-                (seit 2015).
-              </li>
-              <li>Smartphones und Tablets dominieren das Nutzungsverhalten.</li>
-              <li>
-                Trends und Benutzergewohnheiten erfordern mobile Optimierung.
-              </li>
-            </ul>
-			<img src="Pictures/mobileChart.png">
-          </section>
-          <section>
-            <h2>Mobile First Prinzipien</h2>
-            <ul>
-              <li>Beschränkung auf das Wesentliche</li>
-              <li>Maximale Performance</li>
-              <li>Strukturierte Inhalte für schnellen Zugriff</li>
-              <li>Design auf kleine Displays anpassen</li>
-              <li>Reduktion von Code und unnötigen Funktionen</li>
-            </ul>
-			<img src="Pictures/cover-Mobile-First-Design.png">
-          </section>
-          <section>
-            <h2>Vorteile von Mobile First</h2>
-            <ul>
-              <li>Große Reichweite durch mobile Optimierung</li>
-              <li>Schnelle und effiziente Entwicklung</li>
-              <li>Benutzerfreundliches Layout</li>
-              <li>Schnellere Ladezeiten</li>
-              <li>
-                Minimalistisches Design verbessert Lesbarkeit und reduziert
-                Ablenkung
-              </li>
-            </ul>
-          </section>
-          <section>
-            <h2>Nachteile des Mobile First Ansatzes</h2>
-            <ul>
-              <li>Komplizierte Anpassung für Desktops</li>
-              <li>Nicht für komplexe Webanwendungen geeignet</li>
-              <li>Einschränkungen bei Design und Platzverhältnissen</li>
-            </ul>
-          </section>
-          <section>
-            <h2>Herausforderungen von Mobile First</h2>
-            <ul>
-              <li>
-                Priorisierung von Inhalten und Verzicht auf weniger Wichtiges
-              </li>
-              <li>Klare Navigation und klickbare Buttons erforderlich</li>
-              <li>Darstellung komplexer Daten (z. B. Tabellen)</li>
-              <li>Balance zwischen Informationsfülle und Funktionalität</li>
-            </ul>
-          </section>
-		  <section>
-			<h2>Mobile First und Kosteneffizienz</h2>
-			<ul>
-				<li><strong>Argumente dafür:</strong>
-					<ul>
-						<li>Reduzierte Entwicklungszeit</li>
-						<li>Wartungsfreundlichkeit durch Minimalismus</li>
-					</ul>
-				</li>
-				<li><strong>Argumente dagegen:</strong>
-					<ul>
-						<li>Kosten für Tools und Tests</li>
-						<li>Anpassungsaufwand für größere Bildschirme</li>
-					</ul>
-				</li>
-		  </section>
-		  <section>
-			<h2>Wann ist eine Webseite Mobile Friendly?</h2>
-			<ul>
-				<li>Touch-freundliche Bedienelemente: Große Buttons, keine kleinen Klickziele.</li>
-				<li>Lesbarkeit: Kontrastreiche und klare Typografie für kleine Bildschirme.</li>
-				<li>Einfachheit: Nutzer erwarten schnelle und intuitive Navigation.</li>
-			</ul>
-		  </section>
-        </section>
-        <section>
-          <section>Vergleich</section>
-          <section>Slide 1</section>
-          <section>Slide 2</section>
-        </section>
-      </div>
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/black.css">
+
+    <!-- Ergänzende Stylesheet --->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Syntax highlighting -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+
+<body>
+<div class="reveal">
+    <div id="menubartop" class="menubar top ready">
+        <ul class="menu">
+            <li><a href="#/toc" data-sm="toc">Gliederung</a></li>
+            <li><a href="#/desktop-first" data-sm="desktop-first">Desktop-First</a></li>
+            <li><a href="#/mobile-first" data-sm="mobile-first">Mobile-First</a></li>
+            <li><a href="#/transfer" data-sm="transfer">Transfer</a></li>
+            <li><a href="#/sources" data-sm="sources">Quellen</a></li>
+        </ul>
     </div>
+    <div class="slides">
+        <section>
+            <h1>Mobile-First vs. Desktop-First</h1>
+            <h3 class="r-fit-text">Robert Hobelsberger, Felix Kirchner, Quentin Kleinert</h3>
+        </section>
 
-    <script src="dist/reveal.js"></script>
-    <script src="plugin/notes/notes.js"></script>
-    <script src="plugin/markdown/markdown.js"></script>
-    <script src="plugin/highlight/highlight.js"></script>
-    <script>
-      // More info about initialization & config:
-      // - https://revealjs.com/initialization/
-      // - https://revealjs.com/config/
-      Reveal.initialize({
+        <section>
+            <section id="toc" data-name="toc">
+                <h2>Gliederung</h2>
+                <h4>Desktop-First</h4>
+                <ul>
+                    <li>Einführung</li>
+                    <li>Beispiele</li>
+                    <li>Vorteile</li>
+                    <li>Nachteile</li>
+                    <li>Anwendungszwecke</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Gliederung</h2>
+                <h4>Mobile-First</h4>
+                <ul>
+                    <li>Erstes Thema</li>
+                    <li>Zweites Thema</li>
+                    <li>Drittes Thema</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Gliederung</h2>
+                <h4>Desktop-First</h4>
+                <ul>
+                    <li>Erstes Thema</li>
+                    <li>Zweites Thema</li>
+                    <li>Drittes Thema</li>
+                </ul>
+            </section>
+        </section>
+
+        <section>
+            <section id="desktop-first" data-name="desktop-first">
+                <h2>Desktop-First</h2>
+                <p class="fragment">Ursprung</p>
+            </section>
+            <section>
+                <h4>Beschreibung</h4>
+                <ul>
+                    <li class="fragment">Desktop- oder Laptop-Erlebnis steht im Vordergrund</li>
+                    <li class="fragment">Ausgehend davon Konzepte für kleinere Bildschirme ableiten</li>
+                    <li class="fragment">Responsive Retrofitting: nicht-responsive (Desktop-)Website wird im nachhinein mobiltauglich gemacht</li>
+                </ul>
+            </section>
+            <section>
+                <h4>Beispiele</h4>
+                <video autoplay="true" loop="true" data-loop src="assets/website-videos/apple.webm"></video>
+            </section>
+            <section>
+                <h4>Beispiele</h4>
+                <video autoplay="true" loop="true" data-loop src="assets/website-videos/dropbox.webm"></video>
+            </section>
+            <section>
+                <h4>Beispiele</h4>
+                <video autoplay="true" loop="true" data-loop src="assets/website-videos/adobe.webm"></video>
+            </section>
+            <section>
+                <h4>Vorteile</h4>
+                <ul>
+                    <li class="fragment">Größere Design-Flexibilität</li>
+                    <li class="fragment">Vollständiges Feature-Erlebnis</li>
+                    <li class="fragment">Detaillierte Designs</li>
+                    <li class="fragment">Legacy-Nutzer</li>
+                    <li class="fragment">Anpassbarkeit</li>
+                </ul>
+            </section>
+            <section>
+                <h4>Nachteile</h4>
+                <ul>
+                    <li class="fragment">Schlechtes mobiles Erlebnis</li>
+                    <li class="fragment">Eingeschränkte Zukunftssicherheit</li>
+                    <li class="fragment">Detaillierte Designs</li>
+                    <li class="fragment">Legacy-Nutzer</li>
+                    <li class="fragment">Anpassbarkeit</li>
+                </ul>
+            </section>
+            <section>
+                <h4>Anwedungszwecke</h4>
+                <ul>
+                    <li class="fragment">Komplexe Webanwendungen</li>
+                    <li class="fragment">B2B-Websites</li>
+                    <li class="fragment">Forschungsintensive Plattformen</li>
+                    <li class="fragment">Portfolio Websites Plattformen</li>
+                </ul>
+            </section>
+        </section>
+
+        <section>
+            <section id="mobile-first" data-name="mobile-first">Mobile First</section>
+            <section>
+                <h2>Was ist Mobile First?</h2>
+                <ul>
+                    <li>
+                        Definition: Fokus auf die Optimierung für mobile Geräte, dann
+                        sukzessive Anpassungen an größere Bildschirme.
+                    </li>
+                    <li>
+                        Entwicklung startet beim kleinsten Layout (kleinster Viewport).
+                    </li>
+                    <li>Im Zentrum: optimale Lösung für mobile Endgeräte.</li>
+                </ul>
+                <img src="Pictures/02-04-4-mobile-first.avif" />
+            </section>
+            <section>
+                <h2>Warum Mobile First?</h2>
+                <ul>
+                    <li>
+                        Mehr als 80% der Internetnutzer in Deutschland surfen mobil
+                        (seit 2015).
+                    </li>
+                    <li>Smartphones und Tablets dominieren das Nutzungsverhalten.</li>
+                    <li>
+                        Trends und Benutzergewohnheiten erfordern mobile Optimierung.
+                    </li>
+                </ul>
+                <img src="Pictures/mobileChart.png">
+            </section>
+            <section>
+                <h2>Mobile First Prinzipien</h2>
+                <ul>
+                    <li>Beschränkung auf das Wesentliche</li>
+                    <li>Maximale Performance</li>
+                    <li>Strukturierte Inhalte für schnellen Zugriff</li>
+                    <li>Design auf kleine Displays anpassen</li>
+                    <li>Reduktion von Code und unnötigen Funktionen</li>
+                </ul>
+                <img src="Pictures/cover-Mobile-First-Design.png">
+            </section>
+            <section>
+                <h2>Vorteile von Mobile First</h2>
+                <ul>
+                    <li>Große Reichweite durch mobile Optimierung</li>
+                    <li>Schnelle und effiziente Entwicklung</li>
+                    <li>Benutzerfreundliches Layout</li>
+                    <li>Schnellere Ladezeiten</li>
+                    <li>
+                        Minimalistisches Design verbessert Lesbarkeit und reduziert
+                        Ablenkung
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h2>Nachteile des Mobile First Ansatzes</h2>
+                <ul>
+                    <li>Komplizierte Anpassung für Desktops</li>
+                    <li>Nicht für komplexe Webanwendungen geeignet</li>
+                    <li>Einschränkungen bei Design und Platzverhältnissen</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Herausforderungen von Mobile First</h2>
+                <ul>
+                    <li>
+                        Priorisierung von Inhalten und Verzicht auf weniger Wichtiges
+                    </li>
+                    <li>Klare Navigation und klickbare Buttons erforderlich</li>
+                    <li>Darstellung komplexer Daten (z. B. Tabellen)</li>
+                    <li>Balance zwischen Informationsfülle und Funktionalität</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Mobile First und Kosteneffizienz</h2>
+                <ul>
+                    <li><strong>Argumente dafür:</strong>
+                        <ul>
+                            <li>Reduzierte Entwicklungszeit</li>
+                            <li>Wartungsfreundlichkeit durch Minimalismus</li>
+                        </ul>
+                    </li>
+                    <li><strong>Argumente dagegen:</strong>
+                        <ul>
+                            <li>Kosten für Tools und Tests</li>
+                            <li>Anpassungsaufwand für größere Bildschirme</li>
+                        </ul>
+                    </li>
+            </section>
+            <section>
+                <h2>Wann ist eine Webseite Mobile Friendly?</h2>
+                <ul>
+                    <li>Touch-freundliche Bedienelemente: Große Buttons, keine kleinen Klickziele.</li>
+                    <li>Lesbarkeit: Kontrastreiche und klare Typografie für kleine Bildschirme.</li>
+                    <li>Einfachheit: Nutzer erwarten schnelle und intuitive Navigation.</li>
+                </ul>
+            </section>
+        </section>
+
+        <section>
+            <section id="transfer" data-name="transfer">Transfer</section>
+            <section>Slide 1</section>
+            <section>Slide 2</section>
+        </section>
+
+        <section id="sources" data-name="sources">
+            <h4>Quellen</h4>
+            <ul style="font-size: smaller;">
+                <li><a href="https://webclan.de/webdesign/mobile-first-design-vs-desktop-first-design/">webclan.de</a></li>
+                <li><a href="https://www.halbstark.de/insights/mobile-first-vs-desktop-first---warum-wir-auf-desktop-first-setzen">halbstark.de</a></li>
+                <li><a href="https://www.hvdig.de/webagentur/mobile-first-vs-desktop-first">hvdig.de</a></li>
+            </ul>
+        </section>
+    </div>
+    <footer class="slide-footer">
+        Desktop-First vs. Mobile First - Robert Hobelsberger, Felix Kirchner, Quentin Kleinert - Mutlimediale
+        Webprogrammierung (C741)
+    </footer>
+</div>
+
+<script type="text/javascript" src="https://livejs.com/live.js"></script>
+<script src="dist/reveal.js"></script>
+<script src="plugin/notes/notes.js"></script>
+<script src="plugin/markdown/markdown.js"></script>
+<script src="plugin/highlight/highlight.js"></script>
+<script src="plugin/simplemenu/simplemenu.js"></script>
+<script>
+    // More info about initialization & config:
+    // - https://revealjs.com/initialization/
+    // - https://revealjs.com/config/
+    Reveal.initialize({
         hash: true,
-
+        slideNumber: "c/t",
+            showSlideNumber: 'all',
         // Learn about plugins: https://revealjs.com/plugins/
-        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
-      });
-    </script>
-  </body>
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes, Simplemenu]
+    });
+</script>
+</body>
+
 </html>
