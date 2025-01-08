@@ -1,53 +1,149 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
-		<title>MMWP</title>
+    <title>MMWP</title>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" />
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>
-					<section>Desktop First</section>
-					<section>Slide 1</section>
-					<section>Slide 2</section>
-				</section>
-				<section>
-					<section>Mobile First</section>
-					<section>Slide 1</section>
-					<section>Slide 2</section>
-				</section>
-				<section>
-					<section>Vergleich</section>
-					<section>Slide 1</section>
-					<section>Slide 2</section>
-				</section>
-			</div>
-		</div>
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <section>Desktop First</section>
+          <section>Slide 1</section>
+          <section>Slide 2</section>
+        </section>
+        <section>
+          <section>Mobile First</section>
+          <section>
+            <h2>Was ist Mobile First?</h2>
+            <ul>
+              <li>
+                Definition: Fokus auf die Optimierung für mobile Geräte, dann
+                sukzessive Anpassungen an größere Bildschirme.
+              </li>
+              <li>
+                Entwicklung startet beim kleinsten Layout (kleinster Viewport).
+              </li>
+              <li>Im Zentrum: optimale Lösung für mobile Endgeräte.</li>
+            </ul>
+            <img src="Pictures/02-04-4-mobile-first.avif" />
+          </section>
+          <section>
+            <h2>Warum Mobile First?</h2>
+            <ul>
+              <li>
+                Mehr als 80% der Internetnutzer in Deutschland surfen mobil
+                (seit 2015).
+              </li>
+              <li>Smartphones und Tablets dominieren das Nutzungsverhalten.</li>
+              <li>
+                Trends und Benutzergewohnheiten erfordern mobile Optimierung.
+              </li>
+            </ul>
+			<img src="Pictures/mobileChart.png">
+          </section>
+          <section>
+            <h2>Mobile First Prinzipien</h2>
+            <ul>
+              <li>Beschränkung auf das Wesentliche</li>
+              <li>Maximale Performance</li>
+              <li>Strukturierte Inhalte für schnellen Zugriff</li>
+              <li>Design auf kleine Displays anpassen</li>
+              <li>Reduktion von Code und unnötigen Funktionen</li>
+            </ul>
+			<img src="Pictures/cover-Mobile-First-Design.png">
+          </section>
+          <section>
+            <h2>Vorteile von Mobile First</h2>
+            <ul>
+              <li>Große Reichweite durch mobile Optimierung</li>
+              <li>Schnelle und effiziente Entwicklung</li>
+              <li>Benutzerfreundliches Layout</li>
+              <li>Schnellere Ladezeiten</li>
+              <li>
+                Minimalistisches Design verbessert Lesbarkeit und reduziert
+                Ablenkung
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h2>Nachteile des Mobile First Ansatzes</h2>
+            <ul>
+              <li>Komplizierte Anpassung für Desktops</li>
+              <li>Nicht für komplexe Webanwendungen geeignet</li>
+              <li>Einschränkungen bei Design und Platzverhältnissen</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Herausforderungen von Mobile First</h2>
+            <ul>
+              <li>
+                Priorisierung von Inhalten und Verzicht auf weniger Wichtiges
+              </li>
+              <li>Klare Navigation und klickbare Buttons erforderlich</li>
+              <li>Darstellung komplexer Daten (z. B. Tabellen)</li>
+              <li>Balance zwischen Informationsfülle und Funktionalität</li>
+            </ul>
+          </section>
+		  <section>
+			<h2>Mobile First und Kosteneffizienz</h2>
+			<ul>
+				<li><strong>Argumente dafür:</strong>
+					<ul>
+						<li>Reduzierte Entwicklungszeit</li>
+						<li>Wartungsfreundlichkeit durch Minimalismus</li>
+					</ul>
+				</li>
+				<li><strong>Argumente dagegen:</strong>
+					<ul>
+						<li>Kosten für Tools und Tests</li>
+						<li>Anpassungsaufwand für größere Bildschirme</li>
+					</ul>
+				</li>
+		  </section>
+		  <section>
+			<h2>Wann ist eine Webseite Mobile Friendly?</h2>
+			<ul>
+				<li>Touch-freundliche Bedienelemente: Große Buttons, keine kleinen Klickziele.</li>
+				<li>Lesbarkeit: Kontrastreiche und klare Typografie für kleine Bildschirme.</li>
+				<li>Einfachheit: Nutzer erwarten schnelle und intuitive Navigation.</li>
+			</ul>
+		  </section>
+        </section>
+        <section>
+          <section>Vergleich</section>
+          <section>Slide 1</section>
+          <section>Slide 2</section>
+        </section>
+      </div>
+    </div>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
 </html>
