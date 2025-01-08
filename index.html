@@ -2,112 +2,170 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-	<title>MMWP</title>
+    <title>Mobile-First vs. Desktop-First</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 
-	<link rel="stylesheet" href="dist/reset.css">
-	<link rel="stylesheet" href="dist/reveal.css">
-	<link rel="stylesheet" href="dist/theme/black.css">
-	<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/black.css">
+    <link rel="stylesheet" href="style.css">
 
-	<!-- Theme used for syntax highlighted code -->
-	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css">
 </head>
 
 <body>
-	<div class="reveal">
-		<div id="menubartop" class="menubar top ready">
-			<ul class="menu">
-				<li><a href="#/toc" data-sm="toc">Gliederung</a></li>
-				<li><a href="#/desktop-first" data-sm="desktop-first">Desktop-First</a></li>
-				<li><a href="#/mobile-first" data-sm="mobile-first">Mobile-First</a></li>
-				<li><a href="#/transfer" data-sm="transfer">Transfer</a></li>
-				<li><a href="#/sources" data-sm="sources">Quellen</a></li>
+<div class="reveal">
+    <div id="menubartop" class="menubar top ready">
+        <ul class="menu">
+            <li><a href="#/toc" data-sm="toc">Gliederung</a></li>
+            <li><a href="#/desktop-first" data-sm="desktop-first">Desktop-First</a></li>
+            <li><a href="#/mobile-first" data-sm="mobile-first">Mobile-First</a></li>
+            <li><a href="#/transfer" data-sm="transfer">Transfer</a></li>
+            <li><a href="#/sources" data-sm="sources">Quellen</a></li>
 
-			</ul>
-		</div>
-		<div class="slides">
-			<section>
-				<h1>Mobile-First vs. Desktop-First</h1>
-				<h3 class="r-fit-text">Robert Hobelsberger, Felix Kirchner, Quentin Kleinert</h3>
-			</section>
-			<section>
-				<section id="toc" data-name="toc">
-					<h2>Gliederung</h2>
-					<h4>Desktop-First</h4>
-					<ul>
-						<li>Erstes Thema</li>
-						<li>Zweites Thema</li>
-						<li>Drittes Thema</li>
-					</ul>
-				</section>
-				<section>
-					<h2>Gliederung</h2>
-					<h4>Mobile-First</h4>
-					<ul>
-						<li>Erstes Thema</li>
-						<li>Zweites Thema</li>
-						<li>Drittes Thema</li>
-					</ul>
-				</section>
-				<section>
-					<h2>Gliederung</h2>
-					<h4>Desktop-First</h4>
-					<ul>
-						<li>Erstes Thema</li>
-						<li>Zweites Thema</li>
-						<li>Drittes Thema</li>
-					</ul>
-				</section>
-			</section>
-			<section>
-				<section id="desktop-first" data-name="desktop-first">Desktop First</section>
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</section>
-			<section>
-				<section id="mobile-first" data-name="mobile-first">Mobile First</section>
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</section>
-			<section>
-				<section id="transfer" data-name="transfer">Transfer</section>
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</section>
-			<section id="sources" data-name="sources">
-				<h4>Quellen</h4>
-				<ul>
-					<li>a</li>
-					<li>b</li>
-					<li>c</li>
-					<li>d</li>
-				</ul>
-			</section>
-		</div>
-		<footer class="slide-footer">
-			Desktop-First vs. Mobile First - Robert Hobelsberger, Felix Kirchner, Quentin Kleinert - Mutlimediale Webprogrammierung (C741)
-		</footer>
-	</div>
+        </ul>
+    </div>
+    <div class="slides">
+        <section>
+            <h1>Mobile-First vs. Desktop-First</h1>
+            <h3 class="r-fit-text">Robert Hobelsberger, Felix Kirchner, Quentin Kleinert</h3>
+        </section>
 
-	<script src="dist/reveal.js"></script>
-	<script src="plugin/notes/notes.js"></script>
-	<script src="plugin/markdown/markdown.js"></script>
-	<script src="plugin/highlight/highlight.js"></script>
-	<script src="plugin/simplemenu/simplemenu.js"></script>
-	<script>
-		// More info about initialization & config:
-		// - https://revealjs.com/initialization/
-		// - https://revealjs.com/config/
-		Reveal.initialize({
-			hash: true,
+        <section>
+            <section id="toc" data-name="toc">
+                <h2>Gliederung</h2>
+                <h4>Desktop-First</h4>
+                <ul>
+                    <li>Einführung</li>
+                    <li>Beispiele</li>
+                    <li>Vorteile</li>
+                    <li>Nachteile</li>
+                    <li>Anwendungszwecke</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Gliederung</h2>
+                <h4>Mobile-First</h4>
+                <ul>
+                    <li>Erstes Thema</li>
+                    <li>Zweites Thema</li>
+                    <li>Drittes Thema</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Gliederung</h2>
+                <h4>Desktop-First</h4>
+                <ul>
+                    <li>Erstes Thema</li>
+                    <li>Zweites Thema</li>
+                    <li>Drittes Thema</li>
+                </ul>
+            </section>
+        </section>
 
-			// Learn about plugins: https://revealjs.com/plugins/
-			plugins: [RevealMarkdown, RevealHighlight, RevealNotes, Simplemenu]
-		});
-	</script>
+        <section>
+            <section id="desktop-first" data-name="desktop-first">
+                <h2>Desktop First wuhuees</h2>
+                <p>Urpsrung (ohne Folie)</p>
+            </section>
+            <section>
+                <h4>Beschreibung</h4>
+                <ul>
+                    <li>Desktop- oder Laptop-Erlebnis steht im Vordergrund</li>
+                    <li>Ausgehend davon Konzepte für kleinere Bildschirme ableiten</li>
+                    <li>Responsive Retrofitting: nicht-responsive (Desktop-)Website wird im nachhinein mobiltauglich gemacht</li>
+                </ul>
+            </section>
+            <section>
+                <h4>Beispiele</h4>
+                <video autoplay="true" loop="true" data-loop src="assets/website-videos/apple.webm"></video>
+            </section>
+            <section>
+                <h4>Beispiele</h4>
+                <video autoplay="true" loop="true" data-loop src="assets/website-videos/dropbox.webm"></video>            </section>
+            <section>
+                <h4>Beispiele</h4>
+                <video autoplay="true" loop="true" data-loop src="assets/website-videos/adobe.webm"></video>            </section>
+            <section>
+                <h4>Vorteile</h4>
+                <ul>
+                    <li>Größere Design-Flexibilität</li>
+                    <li>Vollständiges Feature-Erlebnis</li>
+                    <li>Detaillierte Designs</li>
+                    <li>Legacy-Nutzer</li>
+                    <li>Anpassbarkeit</li>
+                </ul>
+            </section>
+            <section>
+                <h4>Nachteile</h4>
+                <ul>
+                    <li>Schlechtes mobiles Erlebnis</li>
+                    <li>Eingeschränkte Zukunftssicherheit</li>
+                    <li>Detaillierte Designs</li>
+                    <li>Legacy-Nutzer</li>
+                    <li>Anpassbarkeit</li>
+                </ul>
+            </section>
+            <section>
+                <h4>Anwedungszwecke</h4>
+                <ul>
+                    <li>Komplexe Webanwendungen</li>
+                    <li>B2B-Websites</li>
+                    <li>Forschungsintensive Plattformen</li>
+                    <li>Portfolio Websites Plattformen</li>
+                </ul>
+            </section>
+        </section>
+
+        <section>
+            <section id="mobile-first" data-name="mobile-first">Mobile First</section>
+            <section>Slide 1</section>
+            <section>Slide 2</section>
+        </section>
+
+        <section>
+            <section id="transfer" data-name="transfer">Transfer</section>
+            <section>Slide 1</section>
+            <section>Slide 2</section>
+        </section>
+
+        <section id="sources" data-name="sources">
+            <h4>Quellen</h4>
+            <ul style="font-size: smaller;">
+                <li><a href="https://webclan.de/webdesign/mobile-first-design-vs-desktop-first-design/">webclan.de</a></li>
+                <li><a href="https://www.halbstark.de/insights/mobile-first-vs-desktop-first---warum-wir-auf-desktop-first-setzen">halbstark.de</a></li>
+                <li><a href="https://www.hvdig.de/webagentur/mobile-first-vs-desktop-first">hvdig.de</a></li>
+            </ul>
+        </section>
+    </div>
+    <footer class="slide-footer">
+        Desktop-First vs. Mobile First - Robert Hobelsberger, Felix Kirchner, Quentin Kleinert - Mutlimediale
+        Webprogrammierung (C741)
+    </footer>
+</div>
+
+<script type="text/javascript" src="https://livejs.com/live.js"></script>
+<script src="dist/reveal.js"></script>
+<script src="plugin/notes/notes.js"></script>
+<script src="plugin/markdown/markdown.js"></script>
+<script src="plugin/highlight/highlight.js"></script>
+<script src="plugin/simplemenu/simplemenu.js"></script>
+<script>
+    // More info about initialization & config:
+    // - https://revealjs.com/initialization/
+    // - https://revealjs.com/config/
+    Reveal.initialize({
+        hash: true,
+        slideNumber: "c/t",
+            showSlideNumber: 'all',
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes, Simplemenu]
+    });
+</script>
 </body>
 
 </html>
